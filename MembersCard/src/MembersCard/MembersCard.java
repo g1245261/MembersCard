@@ -4,15 +4,15 @@ public class MembersCard {
 	/**
 	 * 会員番号
 	 */
-	int memberId;
+	private int memberId;
 	/**
 	 * 氏名
 	 */
-	String name;
+	private String name;
 	/**
 	 * 累計ポイント
 	 */
-	int points;
+	private int points;
 	/**
 	 * フィールドの初期化メソッド
 	 */
