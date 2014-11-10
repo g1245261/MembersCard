@@ -16,6 +16,7 @@ public class MembersCard {
 	/**
 	 * フィールドの初期化メソッド
 	 */
+	
 	void init(int memberId, String name, int point){
 		setMemberId(memberId);
 		setName(name);
@@ -37,7 +38,20 @@ public class MembersCard {
 	 * 現在のポイントにポイントを追加するメソッド
 	 */
 	void addPoints(int point){
-		points = point;
+		points += point;
+	}
+	/**
+	 * 使用するポイントを減算するメソッド
+	 */
+	int usePoints(int point){
+		boolean totalDiffUse = (points > point);
+		if(totalDiffUse){
+			points -= point;
+		}
+		else{
+			points -= points;
+		}
+		return points;
 	}
 	/**
 	 * 会員データの閲覧
