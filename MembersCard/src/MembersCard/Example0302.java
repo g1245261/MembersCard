@@ -2,7 +2,7 @@ package MembersCard;
 
 public class Example0302 {
 	public static void main(String[] args){
-		int points;
+		int points = 0;
 		MembersCard m1;
 		m1 = new MembersCard();
 		m1.init(1, "山下", 100);
@@ -21,11 +21,13 @@ public class Example0302 {
 		*/
 		
 		m1.show();
+		System.out.println("使用したポイントは" + points + "点です.");
 		
 		MembersCard m2;
 		m2 = new MembersCard();
 		m2.init(2, "山口", 200);
 		points = m2.usePoints(300);
 		m2.show();
+		System.out.println("使用したポイントは" + points + "点です.");
 	}
 }
