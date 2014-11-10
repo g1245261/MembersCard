@@ -17,12 +17,18 @@ public class MembersCard {
 	private int points;
 	
 	/**
+	 * 会員番号のカウント
+	 */
+	private static int numberOfMembers = 1;
+	
+	/**
 	 * フィールドの初期化コンストラクタ
 	 */
-	public MembersCard(int memberId, String name, int point){
-		setMemberId(memberId);
+	public MembersCard(String name, int point){
+		setMemberId(numberOfMembers);
 		setName(name);
 		addPoints(point);
+		numberOfMembers++;
 	}
 	
 	/*
