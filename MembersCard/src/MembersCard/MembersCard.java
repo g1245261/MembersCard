@@ -21,4 +21,22 @@ public class MembersCard {
 		System.out.println("氏名は" + name);
 		System.out.println("累計ポイントは" + points + "点です.");
 	}
+	/**
+	 * フィールドnameに代入するメソッド
+	 */
+	void setName(String name){
+		this.name = name;
+	}
+	/**
+	 * フィールドmemberIdに代入するメソッド
+	 */
+	void setMemberId(int memberId){
+		this.memberId = memberId;
+	}
+	/**
+	 * フィールドpointsに代入するメソッド
+	 */
+	void setPoints(int point){
+		points = point;
+	}
 }
