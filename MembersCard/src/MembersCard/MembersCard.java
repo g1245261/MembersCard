@@ -5,41 +5,59 @@ public class MembersCard {
 	 * 会員番号
 	 */
 	private int memberId;
+	
 	/**
 	 * 氏名
 	 */
 	private String name;
+	
 	/**
 	 * 累計ポイント
 	 */
 	private int points;
+	
+	/**
+	 * フィールドの初期化コンストラクタ
+	 */
+	public MembersCard(int memberId, String name, int point){
+		setMemberId(memberId);
+		setName(name);
+		addPoints(point);
+	}
+	
+	/*
 	/**
 	 * フィールドの初期化メソッド
 	 */
-	
+	/*
 	void init(int memberId, String name, int point){
 		setMemberId(memberId);
 		setName(name);
 		addPoints(point);
 	}
+	*/
+	
 	/**
 	 * フィールドnameに代入するメソッド
 	 */
 	void setName(String name){
 		this.name = name;
 	}
+	
 	/**
 	 * フィールドmemberIdに代入するメソッド
 	 */
 	void setMemberId(int memberId){
 		this.memberId = memberId;
 	}
+	
 	/**
 	 * 現在のポイントにポイントを追加するメソッド
 	 */
 	void addPoints(int point){
 		points += point;
 	}
+	
 	/**
 	 * 使用するポイントを減算するメソッド
 	 */
@@ -55,6 +73,7 @@ public class MembersCard {
 			return point;
 		}
 	}
+	
 	/**
 	 * 会員データの閲覧
 	 */
