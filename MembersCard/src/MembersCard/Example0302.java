@@ -7,7 +7,6 @@ public class Example0302 {
 		m1 = new MembersCard();
 		m1.init(1, "山下", 100);
 		points = m1.usePoints(10);
-		System.out.println("使用したポイントは" + points + "点です.");
 		
 		/*
 		m1.setMemberId(1);
@@ -22,5 +21,11 @@ public class Example0302 {
 		*/
 		
 		m1.show();
+		
+		MembersCard m2;
+		m2 = new MembersCard();
+		m2.init(2, "山口", 200);
+		points = m2.usePoints(300);
+		m2.show();
 	}
 }
