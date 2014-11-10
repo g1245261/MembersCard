@@ -31,6 +31,16 @@ public class MembersCard {
 		numberOfMembers++;
 	}
 	
+	/**
+	 * フィールドの初期化コンストラクタ
+	 */
+	public MembersCard(String name){
+		setMemberId(numberOfMembers);
+		setName(name);
+		addPoints(50);
+		numberOfMembers++;
+	}
+	
 	/*
 	/**
 	 * フィールドの初期化メソッド
