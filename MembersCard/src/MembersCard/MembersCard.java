@@ -50,8 +50,9 @@ public class MembersCard {
 			return point;
 		}
 		else{
-			points -= points;
-			return points;
+			point = points;
+			points -= point;
+			return point;
 		}
 	}
 	/**
