@@ -51,6 +51,7 @@ public class MembersCard {
 		else{
 			points -= points;
 		}
+		System.out.println("使用したポイントは" + points + "点です.");
 		return points;
 	}
 	/**
