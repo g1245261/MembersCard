@@ -47,11 +47,13 @@ public class MembersCard {
 		boolean totalDiffUse = (points > point);
 		if(totalDiffUse){
 			points -= point;
+			System.out.println("使用したポイントは" + point + "点です.");
 		}
 		else{
 			points -= points;
+			System.out.println("使用したポイントは" + points + "点です.");
 		}
-		System.out.println("使用したポイントは" + points + "点です.");
+		
 		return points;
 	}
 	/**
