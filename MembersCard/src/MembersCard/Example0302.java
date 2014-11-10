@@ -38,7 +38,7 @@ public class Example0302 {
 		System.out.println("使用したポイントは" + points + "点です.");
 		
 		MembersCard m3;
-		m3 = new MembersCard("山口", 200);
+		m3 = new MembersCard("山口");
 		points = m3.usePoints(300);
 		m3.show();
 		System.out.println("使用したポイントは" + points + "点です.");

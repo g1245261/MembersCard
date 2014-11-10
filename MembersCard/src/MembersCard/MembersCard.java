@@ -35,9 +35,11 @@ public class MembersCard {
 	 * フィールドの初期化コンストラクタ
 	 */
 	public MembersCard(String name){
+		this(name, 50);
+		/*
 		setMemberId(numberOfMembers);
 		setName(name);
-		addPoints(50);
+		addPoints(50);*/
 		numberOfMembers++;
 	}
 	
