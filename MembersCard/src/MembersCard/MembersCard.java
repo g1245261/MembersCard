@@ -14,12 +14,12 @@ public class MembersCard {
 	 */
 	int points;
 	/**
-	 * 会員データの閲覧
+	 * フィールドの初期化メソッド
 	 */
-	void show(){
-		System.out.println("会員番号は" + memberId + "番");
-		System.out.println("氏名は" + name);
-		System.out.println("累計ポイントは" + points + "点です.");
+	void init(int memberId, String name, int point){
+		setMemberId(memberId);
+		setName(name);
+		addPoints(point);
 	}
 	/**
 	 * フィールドnameに代入するメソッド
@@ -34,9 +34,17 @@ public class MembersCard {
 		this.memberId = memberId;
 	}
 	/**
-	 * フィールドpointsに代入するメソッド
+	 * 現在のポイントにポイントを追加するメソッド
 	 */
-	void setPoints(int point){
+	void addPoints(int point){
 		points = point;
+	}
+	/**
+	 * 会員データの閲覧
+	 */
+	void show(){
+		System.out.println("会員番号は" + memberId + "番");
+		System.out.println("氏名は" + name);
+		System.out.println("累計ポイントは" + points + "点です.");
 	}
 }
