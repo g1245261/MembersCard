@@ -4,8 +4,10 @@ public class Example0302 {
 	public static void main(String[] args){
 		int points = 0;
 		MembersCard m1;
-		m1 = new MembersCard();
+		m1 = new MembersCard(1, "山下", 100);
+		/*
 		m1.init(1, "山下", 100);
+		*/
 		points = m1.usePoints(10);
 		
 		/*
@@ -24,8 +26,10 @@ public class Example0302 {
 		System.out.println("使用したポイントは" + points + "点です.");
 		
 		MembersCard m2;
-		m2 = new MembersCard();
+		m2 = new MembersCard(2, "山口", 200);
+		/*
 		m2.init(2, "山口", 200);
+		*/
 		points = m2.usePoints(300);
 		m2.show();
 		System.out.println("使用したポイントは" + points + "点です.");
